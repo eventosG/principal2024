@@ -100,7 +100,7 @@ export default function Dicas() {
             <div className="mt-4">
               {isSelected === "Todos Convites" ? (
                 <>              
-                <TECarousel showControls ride="carousel">
+                {/* <TECarousel showControls ride="carousel">
                     <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
                     <TECarouselItem
                         itemID={1}
@@ -133,7 +133,7 @@ export default function Dicas() {
                         />
                     </TECarouselItem>
                     </div>
-                </TECarousel>
+                </TECarousel> */}
                 </>
                 ):(<>
                     <p className="font-bold">Decoração</p>

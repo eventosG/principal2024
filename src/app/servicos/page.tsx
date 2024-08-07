@@ -94,7 +94,7 @@ export default function Servicos() {
                   {selectedProduct === "Preço" && (
                     <>
                       <div className="flex flex-row gap-4 w-80">
-                        <TEInput
+                        {/* <TEInput
                             type="number"
                             id="exampleFormControlInput1"
                             label="Minimo"
@@ -105,7 +105,7 @@ export default function Servicos() {
                             id="exampleFormControlInput1"
                             label="Máximo"
                           >
-                          </TEInput>
+                          </TEInput> */}
                         <div>
                           <button
                             onClick={() => setIsFiltroSelected((prev) => !prev)}
@@ -120,7 +120,7 @@ export default function Servicos() {
                   }
                   {selectedProduct === "Categoria" && (
                     <>
-                      <TEDropdown>
+                      {/* <TEDropdown>
                         <TERipple>
                           <TEDropdownToggle className="flex items-center whitespace-nowrap rounded bg-neutral-50 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-800 shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none">
                             Categorias
@@ -156,7 +156,7 @@ export default function Servicos() {
                             </a>
                           </TEDropdownItem>
                         </TEDropdownMenu>
-                      </TEDropdown>
+                      </TEDropdown> */}
                     </>
                     )
                   }
@@ -165,7 +165,7 @@ export default function Servicos() {
                 </>
               ):(
                 <>
-                  <TEDropdown>
+                  {/* <TEDropdown>
                     <TERipple>
                       <TEDropdownToggle className="flex items-center whitespace-nowrap rounded bg-neutral-50 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-800 shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none">
                         Filtrar Por
@@ -201,13 +201,12 @@ export default function Servicos() {
                         </a>
                       </TEDropdownItem>
                       <TEDropdownItem>
-                        {/* Fazer filtro do preço, categoria e Classificação em simultaneo */}
                         <a href="#" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:bg-neutral-100 focus:bg-neutral-100 focus:text-neutral-800 focus:outline-none active:no-underline dark:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600 dark:active:bg-neutral-600">
                           Filtragem Multipla
                         </a>
                       </TEDropdownItem>
                     </TEDropdownMenu>
-                  </TEDropdown>
+                  </TEDropdown> */}
                 </>
             )}            
             </div>
@@ -226,7 +225,7 @@ export default function Servicos() {
             <div className="mt-4">
               {isSelected === "Todos Produtos" ? (
                 <>
-                <TECarousel showControls ride="carousel">
+                {/* <TECarousel showControls ride="carousel">
                 <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
                   <TECarouselItem
                     itemID={1}
@@ -265,7 +264,7 @@ export default function Servicos() {
                     />
                   </TECarouselItem>
                 </div>
-                </TECarousel>
+                </TECarousel> */}
                 </>
                 ):(<>
                 <div className="grid grid-cols-5 gap-4">
@@ -336,8 +335,7 @@ export default function Servicos() {
                 </div>
               </>
             )}            
-          </div>
-          
+          </div>          
       </div>
       </div>      
     </div>

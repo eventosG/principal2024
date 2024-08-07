@@ -99,7 +99,7 @@ export default function Convites() {
                   {selectedProduct === "Preço" && (
                     <>
                       <div className="flex flex-row gap-4 w-80">
-                        <TEInput
+                        {/* <TEInput
                             type="number"
                             id="exampleFormControlInput1"
                             label="Minimo"
@@ -110,7 +110,7 @@ export default function Convites() {
                             id="exampleFormControlInput1"
                             label="Máximo"
                           >
-                          </TEInput>
+                          </TEInput> */}
                         <div>
                           <button
                             onClick={() => setIsFiltroSelected((prev) => !prev)}
@@ -125,7 +125,7 @@ export default function Convites() {
                   }
                   {selectedProduct === "Material" && (
                     <>
-                      <TEDropdown>
+                      {/* <TEDropdown>
                         <TERipple>
                           <TEDropdownToggle className="flex items-center whitespace-nowrap rounded bg-neutral-50 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-800 shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none">
                           Material
@@ -161,7 +161,7 @@ export default function Convites() {
                             </a>
                         </TEDropdownItem>
                         </TEDropdownMenu>
-                      </TEDropdown>
+                      </TEDropdown> */}
                     </>
                     )
                   }
@@ -172,7 +172,7 @@ export default function Convites() {
                 <>
                     {isSelected === "Todos Convites" ? (<></>):(
                         <>
-                            <TEDropdown>
+                            {/* <TEDropdown>
                                 <TERipple>
                                 <TEDropdownToggle className="flex items-center whitespace-nowrap rounded bg-neutral-50 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-800 shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none">
                                     Filtrar Por
@@ -203,7 +203,7 @@ export default function Convites() {
                                     </a>
                                 </TEDropdownItem>
                                 </TEDropdownMenu>
-                            </TEDropdown>
+                            </TEDropdown> */}
                         </>
                 )}
                   
@@ -271,7 +271,7 @@ export default function Convites() {
                         </div>
                     </div>
                 </div>                
-                <TECarousel showControls ride="carousel">
+                {/* <TECarousel showControls ride="carousel">
                     <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
                     <TECarouselItem
                         itemID={1}
@@ -304,7 +304,7 @@ export default function Convites() {
                         />
                     </TECarouselItem>
                     </div>
-                </TECarousel>
+                </TECarousel> */}
                 </>
                 ):(<>
                 <div className="grid grid-cols-5 gap-4">

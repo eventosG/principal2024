@@ -1,39 +1,4 @@
- "use client";
-import React, { useState, useEffect, useRef } from "react";
-import { TEChart, TETextarea, TESelect  } from "tw-elements-react";
-import {
-    TEDropdown,
-    TEDropdownToggle,
-    TEDropdownMenu,
-    TEDropdownItem,
-    TERipple,
-  } from "tw-elements-react";
-var convidados = [
-    "convidado 1",
-    "convidado 2",
-    "convidado 3",
-    "convidado 4",
-    "convidado 5",
-    "convidado 6",
-    "convidado 7",
-    "convidado 8",
-    "convidado 9",
-    "convidado 10",
-    "convidado 11",
-    "convidado 12",
-]
-function  Convidados () {
-    const [showVisao, setShowVisao] = useState(false);
-    const [showResumo, setShowResumo] = useState(false);
-    const [IsRSVP, setIsRSVP] = useState(false);
-    const [momentoText, setMomentoText] = useState("");
-    function momento(momento) {
-        setShowVisao(true)
-        setMomentoText(momento)
-    }
-  return (
-    <div className='container lg:mx-auto lg:min-h-50vh'>
-        {IsRSVP ? (
+{IsRSVP ? (
             <>
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -46,7 +11,7 @@ function  Convidados () {
                         <p className="mb-2">Escreva uma mensagem para o seu convidado</p>
                         <div className="flex justify-center">
                             <div className="relative mb-3 w-full">
-                                {/* <TETextarea id="textareaExample" label="Mensagem" rows={4}></TETextarea> */}
+                                <TETextarea id="textareaExample" label="Mensagem" rows={4}></TETextarea>
                             </div>
                         </div>
                     </div>
@@ -309,7 +274,7 @@ function  Convidados () {
                             <div className="col-span-2">
                                 <div className="text-center">
                                     <p className="font-bold">Participação</p>
-                                    {/* <TEChart
+                                    <TEChart
                                             type="doughnut"
                                             data={{
                                                 labels: [
@@ -327,7 +292,7 @@ function  Convidados () {
                                                 },
                                                 ],
                                             }}
-                                            /> */}
+                                            />
                                 </div>  
                             </div>
                         </div>
@@ -452,7 +417,7 @@ function  Convidados () {
                                                 </div>
                                             </div>
                                             <div className="w-24">
-                                            {/* <TEDropdown className="flex justify-center">
+                                            <TEDropdown className="flex justify-center">
                                                 <TERipple rippleColor="light">
                                                     <TEDropdownToggle className="flex items-center whitespace-nowrap rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] motion-reduce:transition-none dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
                                                     Dropdown button
@@ -489,7 +454,7 @@ function  Convidados () {
                                                     </a>
                                                     </TEDropdownItem>
                                                 </TEDropdownMenu>
-                                            </TEDropdown> */}
+                                            </TEDropdown>
                                             </div>
                                         </div>
                                     </div>                                   
@@ -746,7 +711,7 @@ function  Convidados () {
                                                 </div></div>
                                         </div>
                                         <div className="w-24">
-                                        {/* <TEDropdown className="flex justify-center">
+                                        <TEDropdown className="flex justify-center">
                                             <TERipple rippleColor="light">
                                                 <TEDropdownToggle className="flex items-center whitespace-nowrap rounded bg-neutral-50 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-neutral-50">
                                                 Editar
@@ -778,7 +743,7 @@ function  Convidados () {
                                                 </a>
                                                 </TEDropdownItem>
                                             </TEDropdownMenu>
-                                        </TEDropdown> */}
+                                        </TEDropdown>
                                             </div>
                                     </div>  
                                     </div>
@@ -947,9 +912,3 @@ function  Convidados () {
                 </div>
             </>
             )}
-        
-    </div>    
-  );
-}
-export default Convidados;
-// O formulário de registro deverá pedir o numero de convidados expeciais e outros convidados separadamente, estes dados serão usados no RSVP das tabelas dos convidados especiais e outros convidados respectivamente

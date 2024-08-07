@@ -30,19 +30,19 @@ export default function Definicoes() {
                 <hr />
                 <div className="flex flex-row justify-center gap-2 mt-4">
                     <div>
-                        <TEInput
+                        {/* <TEInput
                             type="text"
                             label="Nome"
-                          />
+                          /> */}
                     </div>
                     <div>
-                        <TEInput
+                        {/* <TEInput
                             type="email"
                             label="Email"
-                          />
+                          /> */}
                     </div>
                     <div>
-                        <TEDropdown>
+                        {/* <TEDropdown>
                         <TERipple>
                           <TEDropdownToggle className="w-80 flex items-center whitespace-nowrap rounded bg-neutral-50 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-800 shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none">
                             Cargo
@@ -72,13 +72,13 @@ export default function Definicoes() {
                           <p className="p-2">Colaborador</p>
                           </TEDropdownItem>
                         </TEDropdownMenu>
-                      </TEDropdown>
+                      </TEDropdown> */}
                     </div>
                     <div>
-                        <TEInput
+                        {/* <TEInput
                             type="password"
                             label="Senha"
-                          />
+                          /> */}
                     </div>
                     <div className="absolute right-52 z-10">
                         {toggleDropdown ? (

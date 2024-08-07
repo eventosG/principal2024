@@ -151,13 +151,13 @@ export default function ConviteSelected() {
                             <h3>Número de Convites:</h3>
                         </div>
                         <div className="w-1/3">
-                            <TEInput
+                            {/* <TEInput
                             type="number"
                             id="exampleFormControlInputNumber"
                             label="Convites"
                             max={10}
                             min={1}
-                            ></TEInput>
+                            ></TEInput> */}
                         </div>
                     </div>
                 </div>
@@ -168,13 +168,13 @@ export default function ConviteSelected() {
                                 <h3>Número de Cartão de Instruções:</h3>
                             </div>
                             <div className="w-1/3">
-                                <TEInput
+                                {/* <TEInput
                                 type="number"
                                 id="exampleFormControlInputNumber"
                                 label="Instruções"
                                 max={10}
                                 min={1}
-                                ></TEInput>
+                                ></TEInput> */}
                             </div>
                         </div>
                     </div>
@@ -186,13 +186,13 @@ export default function ConviteSelected() {
                                 <h3>Número de Cartão de Recepção:</h3>
                             </div>
                             <div className="w-1/3">
-                                <TEInput
+                                {/* <TEInput
                                 type="number"
                                 id="exampleFormControlInputNumber"
                                 label="Instruções"
                                 max={10}
                                 min={1}
-                                ></TEInput>
+                                ></TEInput> */}
                             </div>
                         </div>
                     </div>
@@ -220,15 +220,13 @@ export default function ConviteSelected() {
         </div>        
       </div>
        {/* <!-- Modal --> */}
-        <TEModal show={showModal2} setShow={setShowModal2}>
+        {/* <TEModal show={showModal2} setShow={setShowModal2}>
             <TEModalDialog>
             <TEModalContent>
                 <TEModalHeader>
-                {/* <!--Modal title--> */}
                 <h5 className="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200">
                     Cartão de Recepção
                 </h5>
-                {/* <!--Close button--> */}
                 <button
                     type="button"
                     className="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
@@ -251,7 +249,6 @@ export default function ConviteSelected() {
                     </svg>
                 </button>
                 </TEModalHeader>
-                {/* <!--Modal body--> */}
                 <TEModalBody>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4'>
                     <div onClick={() => setIsCartaoRecepcao(true)}>
@@ -287,16 +284,14 @@ export default function ConviteSelected() {
                 </TEModalFooter>
             </TEModalContent>
             </TEModalDialog>
-        </TEModal>   
-        <TEModal show={showModal} setShow={setShowModal}>
+        </TEModal>    */}
+        {/* <TEModal show={showModal} setShow={setShowModal}>
             <TEModalDialog>
             <TEModalContent>
                 <TEModalHeader>
-                {/* <!--Modal title--> */}
                 <h5 className="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200">
                     Cartão de Instruções
                 </h5>
-                {/* <!--Close button--> */}
                 <button
                     type="button"
                     className="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
@@ -319,7 +314,6 @@ export default function ConviteSelected() {
                     </svg>
                 </button>
                 </TEModalHeader>
-                {/* <!--Modal body--> */}
                 <TEModalBody>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4'>
                     <div onClick={() => setIsCrtoesInstrucoes(true)}>
@@ -373,7 +367,7 @@ export default function ConviteSelected() {
                 </TEModalFooter>
             </TEModalContent>
             </TEModalDialog>
-        </TEModal>   
+        </TEModal>    */}
     </div>    
   );
 }

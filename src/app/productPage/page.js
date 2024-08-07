@@ -126,7 +126,7 @@ export default function Servicos() {
                             <h3>Motorista:</h3>
                         </div>
                         <div className="flex flex-row">
-                            <TEDropdown>
+                            {/* <TEDropdown>
                                 <TERipple>
                                 <TEDropdownToggle className="flex items-center whitespace-nowrap rounded bg-neutral-50 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-800 shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none">
                                     Incluso
@@ -157,7 +157,7 @@ export default function Servicos() {
                                     </a>
                                 </TEDropdownItem>
                                 </TEDropdownMenu>
-                            </TEDropdown>
+                            </TEDropdown> */}
                         </div>
                     </div>
                 </div>                
@@ -171,13 +171,13 @@ export default function Servicos() {
                             <h3>Número de Dias:</h3>
                         </div>
                         <div className="w-1/3">
-                            <TEInput
+                            {/* <TEInput
                             type="number"
                             id="exampleFormControlInputNumber"
                             label="Dias"
                             max={4}
                             min={1}
-                            ></TEInput>
+                            ></TEInput> */}
                         </div>
                     </div>
                 </div>
@@ -203,15 +203,13 @@ export default function Servicos() {
         </div>        
       </div>
        {/* <!-- Modal --> */}
-        <TEModal show={showModal2} setShow={setShowModal2}>
+        {/* <TEModal show={showModal2} setShow={setShowModal2}>
             <TEModalDialog>
             <TEModalContent>
                 <TEModalHeader>
-                {/* <!--Modal title--> */}
                 <h5 className="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200">
                     Matricula Personalizada
                 </h5>
-                {/* <!--Close button--> */}
                 <button
                     type="button"
                     className="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
@@ -234,7 +232,6 @@ export default function Servicos() {
                     </svg>
                 </button>
                 </TEModalHeader>
-                {/* <!--Modal body--> */}
                 <TEModalBody>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4'>
                     <div>
@@ -270,16 +267,14 @@ export default function Servicos() {
                 </TEModalFooter>
             </TEModalContent>
             </TEModalDialog>
-        </TEModal>   
-        <TEModal show={showModal} setShow={setShowModal}>
+        </TEModal>    */}
+        {/* <TEModal show={showModal} setShow={setShowModal}>
             <TEModalDialog>
             <TEModalContent>
                 <TEModalHeader>
-                {/* <!--Modal title--> */}
                 <h5 className="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200">
                     Decoração
                 </h5>
-                {/* <!--Close button--> */}
                 <button
                     type="button"
                     className="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
@@ -302,7 +297,6 @@ export default function Servicos() {
                     </svg>
                 </button>
                 </TEModalHeader>
-                {/* <!--Modal body--> */}
                 <TEModalBody>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4'>
                     <div>
@@ -356,7 +350,7 @@ export default function Servicos() {
                 </TEModalFooter>
             </TEModalContent>
             </TEModalDialog>
-        </TEModal>   
+        </TEModal>    */}
     </div>    
   );
 }
